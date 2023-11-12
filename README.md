@@ -1,8 +1,7 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=msiplab/AuGFT)
 
-[![View Augumented Graph Fourier Transform (AuGFT) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://jp.mathworks.com/matlabcentral/fileexchange/154940-augumented-graph-fourier-transform-augft)
+# AuGFT [![View Augumented Graph Fourier Transform (AuGFT) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://jp.mathworks.com/matlabcentral/fileexchange/154940-augumented-graph-fourier-transform-augft)
 
-# AuGFT
 Supplemental materials for article "Realization of DiGraph Filters Via Augmented GFT"
 
 - H. Kitamura, H. Yasuda, Y. Tanaka and S. Muramatsu, "Realization of DiGraph Filters Via Augmented GFT," 2023 IEEE International Conference on Image Processing (ICIP), Kuala Lumpur, Malaysia, 2023, pp. 2885-2889, doi: 10.1109/ICIP49359.2023.10222618.
