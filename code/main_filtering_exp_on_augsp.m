@@ -23,11 +23,21 @@
 % is verified through simulations of signal filtering on digraphs.
 % * URL: <https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10222618&isnumber=10221892 
 % https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10222618&isnumber=10221892>
+%% 
+% *謝辞：*
+%% 
+% * 本研究は<https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-21H04596/ 科研費21H04596>および<https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-22H09512/ 
+% 科研費22H00512>助成による。
 %% 各種設定
 
 isDiGraph = true; % 有向グラフとして解析
 isRiver = true; % 河川データを解析
-addpath('gspbox')
+
+if ~exist('./gspbox','dir')
+    setup
+else
+    addpath('gspbox')
+end
 gsp_start
 RESULTS_DIR = "../results/";
 FIGEXT = ".png";
