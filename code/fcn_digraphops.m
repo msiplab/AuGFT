@@ -16,6 +16,10 @@ function [U,Q,C,D,L,Lmd,Sgm] = fcn_digraphops(A)
 %   Sgm: 拡張グラフ周波数（交代成分）
 %
 
+arguments
+    A (:,:) double
+end
+
 %　引数がグラフの場合，隣接行列を抽出
 if isa(A,'digraph') || isa(A,'graph')
     A = adjacency(A);
