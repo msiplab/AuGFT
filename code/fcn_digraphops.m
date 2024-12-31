@@ -51,7 +51,7 @@ U = s*U;
 N = size(Am,1);
 isOdd = mod(N,2);
 [V,Gma] = eig(-Am); % マイナスに修正 2023/2/12
-gma = diag(imag(Gma)); % 固有値の虚部を抽出）
+gma = diag(imag(Gma)); % 固有値の虚部を抽出
 [~,idxgma] = sort(gma,'descend'); % 大きい順にソート
 idxgmap = idxgma(1:floor(end/2)); % 正の固有値
 idxgmam = idxgma(end:-1:floor(end/2)+1+isOdd); % 負の固有値
@@ -59,6 +59,7 @@ idxsrtdgma = reshape(vertcat(idxgmap.',idxgmam.'),[],1); % 正負固有値の並
 Gma = 1j*diag(gma(idxsrtdgma)); % 虚数に回復
 V = V(:,idxsrtdgma); % 有意な固有ベクトル
 r = rank(Am); % 交代行列のランク
+%gma(idxsrtdgma)
 Vnz = V(:,1:r); % 非ゼロ固有値に対応する固有ベクトル
 Qnz = reshape([1 1; 1j -1j]*reshape(Vnz',2,[])/sqrt(2),[],N).'; 
 Q = Qnz; % 変換行列
