@@ -12,4 +12,4 @@ Supplemental materials for article "Realization of DiGraph Filters Via Augmented
 
 # Acknowledgement
 
-This work was supported by JSPS KAKENHI Grand Numbers JP21H04596 and JP22H00512.
+This work was supported by JSPS KAKENHI Grand Numbers JP21H04596, JP22H00512 and JP24K21314.
